@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TikTok Mockup</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: sans-serif;
+            color: white;
+        }
+
+        /* Container mimicking a phone screen */
+        .phone-container {
+            width: 375px;
+            height: 667px;
+            background: #111;
+            position: relative;
+            overflow: hidden;
+            border: 8px solid #333;
+            border-radius: 30px;
+        }
+
+        /* Background "Video" area */
+        .video-placeholder {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to bottom, #222, #000);
+        }
+
+        /* Sidebar Icons */
+        .sidebar {
+            position: absolute;
+            right: 10px;
+            bottom: 120px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .icon-circle {
+            width: 45px;
+            height: 45px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 12px;
+        }
+
+        /* Bottom Info (Username/Caption) */
+        .video-info {
+            position: absolute;
+            left: 15px;
+            bottom: 70px;
+        }
+
+        .username { font-weight: bold; margin-bottom: 5px; }
+        .caption { font-size: 14px; opacity: 0.9; }
+
+        /* Navigation Bar */
+        .nav-bar {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 50px;
+            background: black;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-top: 1px solid #333;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="phone-container">
+        <div class="video-placeholder">
+            <span>[Video Content Here]</span>
+        </div>
+
+        <div class="sidebar">
+            <div class="icon-circle">❤️</div>
+            <div class="icon-circle">💬</div>
+            <div class="icon-circle">🔗</div>
+        </div>
+
+        <div class="video-info">
+            <div class="username">@creative_coder</div>
+            <div class="caption">Building a TikTok UI from scratch! #coding #webdesign</div>
+        </div>
+
+        <div class="nav-bar">
+            <span>🏠</span>
+            <span>🔍</span>
+            <span style="background: white; color: black; padding: 2px 8px; border-radius: 5px; font-weight: bold;">+</span>
+            <span>📥</span>
+            <span>👤</span>
+        </div>
+    </div>
+
+</body>
+</html>
